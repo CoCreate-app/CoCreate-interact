@@ -63,7 +63,7 @@ function initInteract() {
             target.classList.remove("sort-ghost-class");
             // createChangeContentEvent(findSaveFetchElByChild(event.target));
             
-            if (CoCreateIsotope) {
+            if (typeof CoCreateIsotope !== 'undefined') {
                 CoCreateIsotope.__resetLayout(CoCreateUtils.getParentFromElement(event.target, 'isotope-grid'));
             }
             
